@@ -1,0 +1,15 @@
+<a href="http://localhost:3000/instructors" >View All Instructors </a>    -
+<a href="http://localhost:3000/gyms" >View All Climbing Gyms</a>
+
+<h1> <%=@gym.name%> </h1>
+<p><a href="http://localhost:3000/gyms/<%=@gym.id%>/instructors" >Meet the Instructors of <%=@gym.name%> </a></p>
+
+<h3>
+  <p>Hours: <%= @gym.opening_time %> - <%= @gym.closing_time %><p>
+  <p>Opens at: <%= @gym.opening_time %>:00<p>
+  <p>Closes at: <%= @gym.closing_time %>:00<p>
+  <p>Currently_open: <%= @gym.currently_open %><p>
+  <p>Customer_capacity: <%= @gym.customer_capacity%><p>
+  <p>Instructors at this Gym: <%= @gym.instructors.count %> </p>
+
+</h3>

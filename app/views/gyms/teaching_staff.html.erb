@@ -1,0 +1,15 @@
+<a href="http://localhost:3000/instructors" >View All Instructors </a>    -
+<a href="http://localhost:3000/gyms" >View All Climbing Gyms</a>
+
+<h1> <%= @gym.name %> </h1>
+
+
+  <% @gym.instructors.each do |teacher| %>
+  <p>
+    <h1>_______________________________________________________</h1>
+      <ls><h2><%= teacher.name %></h2></ls>
+      <ls><h4>Students:  <%= teacher.number_of_students %></h4></ls>
+      <ls><h4>Hours Taught:  <%= teacher.hours_taught %></h4></ls>
+      <ls><h4>Teaches Lead Climbing:  <%= teacher.lead_climbing_instructor %></h4></ls>
+  <p>
+  <% end %>

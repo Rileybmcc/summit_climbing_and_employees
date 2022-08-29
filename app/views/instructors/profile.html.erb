@@ -1,0 +1,10 @@
+<a href="http://localhost:3000/instructors" >View All Instructors </a>    -
+<a href="http://localhost:3000/gyms" >View All Climbing Gyms</a>
+
+<h2><%= @teacher.name %></h2>
+
+<h4>
+  <p>Students:  <%= @teacher.number_of_students %></p>
+  <p>Hours Taught:  <%= @teacher.hours_taught %></p>
+  <p>Teaches Lead Climbing:  <%= @teacher.lead_climbing_instructor %></p>
+</h4>

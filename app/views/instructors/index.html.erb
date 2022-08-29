@@ -1,0 +1,18 @@
+<a href="http://localhost:3000/instructors" >View All Instructors </a>    -
+<a href="http://localhost:3000/gyms" >View All Climbing Gyms</a>
+
+<h1>List of Climbing Instructors the Summit Gym Community:</h1>
+<h1>_______________________________________________</h1>
+
+<ol>
+  <% @instructors.each do |teacher| %>
+    <ls>
+      <h2><%= teacher.name %></h2>
+      <h4>Students:  <%= teacher.number_of_students %></h4>
+      <h4>Gym: <%= teacher.gym.name %> </h4>
+      <h4>Hours Taught:  <%= teacher.hours_taught %></h4>
+      <h4>Teaches Lead Climbing:  <%= teacher.lead_climbing_instructor %></h4></ls>
+    <h1>_______________________________________________</h1>
+
+  <% end %>
+<ol>
