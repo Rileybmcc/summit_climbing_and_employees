@@ -4,7 +4,7 @@ class GymsController < ApplicationController
     @gym = Gym.new
     # render :new
   end
-# require "pry"; binding.pry
+
   def create
     @gym = Gym.create
     redirect_to "/gyms"
@@ -15,11 +15,11 @@ class GymsController < ApplicationController
   end
 
   def show
-   @gym = Gym.all#.find(params[:id])
+   @gym = Gym.all #.find(params[:id])
   end
 
   def teaching_staff
-    @gym = Gym.all#.find(params[:id])
+    @gym = Gym.all #.find(params[:id])
 
   end
 

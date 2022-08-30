@@ -253,72 +253,10 @@
           1,
           1,
           null,
-          null,
           null
         ]
       },
       "/Users/rileyblue/turing/2module/projects/summit_climbing_and_employees/app/helpers/application_helper.rb": {
-        "lines": [
-          1,
-          null
-        ]
-      },
-      "/Users/rileyblue/turing/2module/projects/summit_climbing_and_employees/spec/features/gyms_forms/gyms_forms_spec.rb": {
-        "lines": [
-          1,
-          null,
-          1,
-          null,
-          0,
-          0,
-          0,
-          0,
-          0,
-          null,
-          null,
-          0,
-          0,
-          0,
-          null,
-          0,
-          null,
-          null,
-          0,
-          0,
-          0,
-          null,
-          0,
-          0,
-          0,
-          0,
-          0,
-          null,
-          0,
-          0,
-          null,
-          null,
-          null
-        ]
-      },
-      "/Users/rileyblue/turing/2module/projects/summit_climbing_and_employees/app/controllers/gyms_forms.rb": {
-        "lines": [
-          1,
-          null,
-          1,
-          0,
-          0,
-          null,
-          null,
-          1,
-          0,
-          0,
-          null,
-          null,
-          null,
-          null
-        ]
-      },
-      "/Users/rileyblue/turing/2module/projects/summit_climbing_and_employees/app/controllers/application_controller.rb": {
         "lines": [
           1,
           null
@@ -331,29 +269,29 @@
           1,
           null,
           1,
-          0,
-          0,
-          0,
-          0,
+          2,
+          2,
+          2,
+          2,
           null,
           null,
           null,
           null,
           1,
-          0,
+          1,
           null,
-          0,
-          0,
+          1,
+          1,
           null,
           null,
           1,
-          0,
+          1,
           null,
-          0,
-          0,
-          0,
-          0,
-          0,
+          1,
+          1,
+          1,
+          1,
+          1,
           null,
           null,
           null,
@@ -388,7 +326,7 @@
           null,
           null,
           null,
-          1,
+          2,
           null,
           null
         ]
@@ -414,7 +352,7 @@
           null,
           1,
           null,
-          1,
+          2,
           null,
           null
         ]
@@ -433,8 +371,61 @@
           null,
           null
         ]
+      },
+      "/Users/rileyblue/turing/2module/projects/summit_climbing_and_employees/app/controllers/gyms_controller.rb": {
+        "lines": [
+          1,
+          null,
+          1,
+          0,
+          null,
+          null,
+          null,
+          1,
+          0,
+          0,
+          null,
+          null,
+          1,
+          1,
+          null,
+          null,
+          1,
+          1,
+          null,
+          null,
+          1,
+          2,
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      "/Users/rileyblue/turing/2module/projects/summit_climbing_and_employees/app/controllers/application_controller.rb": {
+        "lines": [
+          1,
+          null,
+          null
+        ]
+      },
+      "/Users/rileyblue/turing/2module/projects/summit_climbing_and_employees/app/controllers/instructors_controller.rb": {
+        "lines": [
+          1,
+          null,
+          1,
+          1,
+          null,
+          null,
+          1,
+          1,
+          null,
+          null,
+          null,
+          null
+        ]
       }
     },
-    "timestamp": 1661840910
+    "timestamp": 1661844040
   }
 }

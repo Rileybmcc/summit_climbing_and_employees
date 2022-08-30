@@ -10,6 +10,5 @@ Rails.application.routes.draw do
 
   get '/gyms_forms/new', to:'gyms#new'
   post '/gyms', to: 'gyms#create'
-end
 
-#
+end
