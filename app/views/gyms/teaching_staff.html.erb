@@ -1,10 +1,10 @@
 <a href="http://localhost:3000/instructors" >View All Instructors </a>    -
 <a href="http://localhost:3000/gyms" >View All Climbing Gyms</a>
 
-<h1> <%= @gym.name %> </h1>
+<h1> <%= @gym.find(params[:id]).name %> </h1>
 
 
-  <% @gym.instructors.each do |teacher| %>
+  <% @gym.find(params[:id]).instructors.each do |teacher| %>
   <p>
     <h1>_______________________________________________________</h1>
       <ls><h2><%= teacher.name %></h2></ls>
