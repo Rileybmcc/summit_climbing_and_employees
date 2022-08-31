@@ -36,25 +36,5 @@ ActiveRecord::Schema.define(version: 2022_08_27_043600) do
     t.index ["gym_id"], name: "instructors_gym_id_idx"
   end
 
-  add_foreign_key "instructors", "gyms"#, name: "instructors_gym_id_fkey"
+  add_foreign_key "instructors", "gyms", name: "gym_id"
 end
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-# 1

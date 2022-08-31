@@ -1,4 +1,5 @@
-<%= form_with url: '/gyms', method: :post, local: true do |form| %>
+
+<%= form_with url: "/gyms/#{@gym.id}", method: :patch, local: true do |form| %>
 
   <%= form.label :name %>
   <%= form.text_field :name %>
@@ -15,6 +16,6 @@
   <%= form.label :customer_capacity %>
   <%= form.text_field :customer_capacity %>
 
-  <%= form.submit 'Create Gym' %>
+  <%= form.submit 'Submit' %>
 
 <% end %>

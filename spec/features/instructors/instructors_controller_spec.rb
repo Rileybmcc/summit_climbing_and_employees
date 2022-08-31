@@ -9,8 +9,6 @@ RSpec.describe 'Instructors Index' do
     @staff2 = @gym1.instructors.create!( name: "Mary", gym_id: 1, number_of_students: 2, hours_taught: 32.7,lead_climbing_instructor: false)
   end
 
-
-
   it 'shows all instructors' do
     visit "/instructors"
 
@@ -28,19 +26,17 @@ RSpec.describe 'Instructors Index' do
     expect(page).to have_content(@staff1.lead_climbing_instructor)
   end
 
-#   it 'shows all instructors at a gym' do
-#     visit "/gyms/#{@gym1.id}/instructors"
-#
-#     expect(page).to have_content(@staff1.name)
-#     expect(page).to have_content(@staff2.name)
-#   end
-#
-#   it 'links to all instructors of gym page' do
-#     visit "/gyms/#{@gym1.id}/instructors"
-#     expect have_link("Meet the Instructors of #{@gym1.name}", :href => "http://localhost:3000/gyms/<%=@gym.id%>/instructors")
-#     expect(current_path).to eq("/gyms/#{@gym1.id}/instructors")
-#   end
+  it 'shows all instructors at a gym' do
+    visit "/gyms/#{@gym1.id}/instructors"
 
+    expect(page).to have_content(@staff1.name)
+    expect(page).to have_content(@staff2.name)
+  end
 
+  it 'links to all instructors of gym page' do
+    visit "/gyms/#{@gym1.id}/instructors"
+    expect have_link("Meet the Instructors of #{@gym1.name}", :href => "http://localhost:3000/gyms/<%=@gym.id%>/instructors")
+    expect(current_path).to eq("/gyms/#{@gym1.id}/instructors")
+  end
 
 end

@@ -14,7 +14,7 @@
       <img src="./assets/0.12.3/loading.gif" alt="loading"/>
     </div>
     <div id="wrapper" class="hide">
-      <div class="timestamp">Generated <abbr class="timeago" title="2022-08-30T01:20:40-06:00">2022-08-30T01:20:40-06:00</abbr></div>
+      <div class="timestamp">Generated <abbr class="timeago" title="2022-08-30T21:07:27-06:00">2022-08-30T21:07:27-06:00</abbr></div>
       <ul class="group_tabs"></ul>
 
       <div id="content">
@@ -23,14 +23,14 @@
     <span class="group_name">All Files</span>
     (<span class="covered_percent">
       <span class="green">
-  96.91%
+  96.52%
 </span>
 
      </span>
      covered at
      <span class="covered_strength">
        <span class="green">
-         1.05
+         1.17
        </span>
     </span> hits/line
     )
@@ -43,11 +43,11 @@
   </div>
 
   <div class="t-line-summary">
-    <b>97</b> relevant lines,
-    <span class="green"><b>94</b> lines covered</span> and
-    <span class="red"><b>3</b> lines missed. </span>
+    <b>115</b> relevant lines,
+    <span class="green"><b>111</b> lines covered</span> and
+    <span class="red"><b>4</b> lines missed. </span>
     (<span class="green">
-  96.91%
+  96.52%
 </span>
 )
   </div>
@@ -83,12 +83,12 @@
         
           <tr class="t-file">
             <td class="strong t-file__name"><a href="#2404db54a1486d33f415d49b7751635aacebed42" class="src_link" title="app/controllers/gyms_controller.rb">app/controllers/gyms_controller.rb</a></td>
-            <td class="red strong cell--number t-file__coverage">75.00 %</td>
-            <td class="cell--number">26</td>
-            <td class="cell--number">12</td>
-            <td class="cell--number">9</td>
-            <td class="cell--number">3</td>
-            <td class="cell--number">0.83</td>
+            <td class="red strong cell--number t-file__coverage">80.00 %</td>
+            <td class="cell--number">39</td>
+            <td class="cell--number">20</td>
+            <td class="cell--number">16</td>
+            <td class="cell--number">4</td>
+            <td class="cell--number">1.20</td>
             
           </tr>
         
@@ -294,8 +294,8 @@
             <td class="strong t-file__name"><a href="#17c338f347a83ec7fbb141c91a4689f0da2d36c1" class="src_link" title="config/routes.rb">config/routes.rb</a></td>
             <td class="green strong cell--number t-file__coverage">100.00 %</td>
             <td class="cell--number">14</td>
-            <td class="cell--number">8</td>
-            <td class="cell--number">8</td>
+            <td class="cell--number">10</td>
+            <td class="cell--number">10</td>
             <td class="cell--number">0</td>
             <td class="cell--number">1.00</td>
             
@@ -305,10 +305,10 @@
             <td class="strong t-file__name"><a href="#50280d8d675dcd15ab39797f0502343ccb2da564" class="src_link" title="spec/features/instructors/instructors_controller_spec.rb">spec/features/instructors/instructors_controller_spec.rb</a></td>
             <td class="green strong cell--number t-file__coverage">100.00 %</td>
             <td class="cell--number">46</td>
-            <td class="cell--number">18</td>
-            <td class="cell--number">18</td>
+            <td class="cell--number">26</td>
+            <td class="cell--number">26</td>
             <td class="cell--number">0</td>
-            <td class="cell--number">1.22</td>
+            <td class="cell--number">1.46</td>
             
           </tr>
         
@@ -420,7 +420,7 @@
     <h3>app/controllers/gyms_controller.rb</h3>
     <h4>
       <span class="red">
-  75.0%
+  80.0%
 </span>
 
       lines covered
@@ -429,9 +429,9 @@
     
 
     <div class="t-line-summary">
-      <b>12</b> relevant lines.
-      <span class="green"><b>9</b> lines covered</span> and
-      <span class="red"><b>3</b> lines missed.</span>
+      <b>20</b> relevant lines.
+      <span class="green"><b>16</b> lines covered</span> and
+      <span class="red"><b>4</b> lines missed.</span>
     </div>
 
     
@@ -475,8 +475,8 @@
         </div>
       
         <div>
-          <li class="missed" data-hits="0" data-linenumber="4">
-            
+          <li class="covered" data-hits="2" data-linenumber="4">
+            <span class="hits">2</span>
             
 
             
@@ -486,13 +486,13 @@
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="5">
-            
-            
-
+          <li class="covered" data-hits="2" data-linenumber="5">
+            <span class="hits">2</span>
             
 
-            <code class="ruby">    # render :new</code>
+            
+
+            <code class="ruby">    render :new</code>
           </li>
         </div>
       
@@ -530,24 +530,24 @@
         </div>
       
         <div>
-          <li class="missed" data-hits="0" data-linenumber="9">
-            
-            
-
+          <li class="covered" data-hits="1" data-linenumber="9">
+            <span class="hits">1</span>
             
 
-            <code class="ruby">    @gym = Gym.create</code>
+            
+
+            <code class="ruby">    @gym = Gym.create!({name: params[:name],</code>
           </li>
         </div>
       
         <div>
-          <li class="missed" data-hits="0" data-linenumber="10">
+          <li class="never" data-hits="" data-linenumber="10">
             
             
 
             
 
-            <code class="ruby">    redirect_to &quot;/gyms&quot;</code>
+            <code class="ruby">      opening_time: params[:opening_time],</code>
           </li>
         </div>
       
@@ -558,7 +558,7 @@
 
             
 
-            <code class="ruby">  end</code>
+            <code class="ruby">      closing_time: params[:closing_time],</code>
           </li>
         </div>
       
@@ -569,18 +569,18 @@
 
             
 
-            <code class="ruby"></code>
+            <code class="ruby">      currently_open: params[:currently_open],</code>
           </li>
         </div>
       
         <div>
-          <li class="covered" data-hits="1" data-linenumber="13">
-            <span class="hits">1</span>
+          <li class="never" data-hits="" data-linenumber="13">
+            
             
 
             
 
-            <code class="ruby">  def index</code>
+            <code class="ruby">      customer_capacity: params[:customer_capacity]})</code>
           </li>
         </div>
       
@@ -591,7 +591,7 @@
 
             
 
-            <code class="ruby">    @gyms_by_newest = Gym.all.order(:created_at)</code>
+            <code class="ruby">    redirect_to &quot;/gyms/&quot;</code>
           </li>
         </div>
       
@@ -624,7 +624,7 @@
 
             
 
-            <code class="ruby">  def show</code>
+            <code class="ruby">  def edit</code>
           </li>
         </div>
       
@@ -635,7 +635,7 @@
 
             
 
-            <code class="ruby">   @gym = Gym.all #.find(params[:id])</code>
+            <code class="ruby">    @gym = Gym.find(params[:id])</code>
           </li>
         </div>
       
@@ -668,34 +668,56 @@
 
             
 
-            <code class="ruby">  def teaching_staff</code>
+            <code class="ruby">  def update</code>
           </li>
         </div>
       
         <div>
-          <li class="covered" data-hits="2" data-linenumber="22">
-            <span class="hits">2</span>
+          <li class="missed" data-hits="0" data-linenumber="22">
+            
             
 
             
 
-            <code class="ruby">    @gym = Gym.all #.find(params[:id])</code>
+            <code class="ruby">    @gym = Gym.find(params[:id])</code>
           </li>
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="23">
+          <li class="missed" data-hits="0" data-linenumber="23">
             
             
 
             
 
-            <code class="ruby"></code>
+            <code class="ruby">    @gym.update(gym_params)</code>
           </li>
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="24">
+          <li class="missed" data-hits="0" data-linenumber="24">
+            
+            
+
+            
+
+            <code class="ruby">    @gym.save</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="missed" data-hits="0" data-linenumber="25">
+            
+            
+
+            
+
+            <code class="ruby">    redirect_to &quot;/gyms/#{:id}&quot;</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="26">
             
             
 
@@ -706,7 +728,7 @@
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="25">
+          <li class="never" data-hits="" data-linenumber="27">
             
             
 
@@ -717,7 +739,128 @@
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="26">
+          <li class="covered" data-hits="1" data-linenumber="28">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">  def index</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="4" data-linenumber="29">
+            <span class="hits">4</span>
+            
+
+            
+
+            <code class="ruby">    @gyms_by_newest = Gym.all.order(:created_at)</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="30">
+            
+            
+
+            
+
+            <code class="ruby">  end</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="31">
+            
+            
+
+            
+
+            <code class="ruby"></code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="32">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">  def show</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="33">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">    @gym = Gym.find(params[:id])</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="34">
+            
+            
+
+            
+
+            <code class="ruby">  end</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="35">
+            
+            
+
+            
+
+            <code class="ruby"></code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="36">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">  def teaching_staff</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="4" data-linenumber="37">
+            <span class="hits">4</span>
+            
+
+            
+
+            <code class="ruby">    @gym = Gym.all #.find(params[:id]</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="38">
+            
+            
+
+            
+
+            <code class="ruby">  end</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="39">
             
             
 
@@ -3691,8 +3834,8 @@
     
 
     <div class="t-line-summary">
-      <b>8</b> relevant lines.
-      <span class="green"><b>8</b> lines covered</span> and
+      <b>10</b> relevant lines.
+      <span class="green"><b>10</b> lines covered</span> and
       <span class="red"><b>0</b> lines missed.</span>
     </div>
 
@@ -3732,7 +3875,7 @@
 
             
 
-            <code class="ruby">  get &#39;/gyms&#39;, to: &#39;gyms#index&#39;</code>
+            <code class="ruby">  get &#39;/gyms/:id/edit&#39;, to: &#39;gyms#edit&#39;</code>
           </li>
         </div>
       
@@ -3743,7 +3886,7 @@
 
             
 
-            <code class="ruby">  get &#39;gyms/:id&#39;, to: &#39;gyms#show&#39;</code>
+            <code class="ruby">  patch &#39;/gyms/:id&#39;, to: &#39;gyms#update&#39;</code>
           </li>
         </div>
       
@@ -3754,7 +3897,7 @@
 
             
 
-            <code class="ruby">  get &#39;/instructors&#39;, to: &#39;instructors#index&#39;</code>
+            <code class="ruby">  get &#39;/gyms/new&#39;, to:&#39;gyms#new&#39;</code>
           </li>
         </div>
       
@@ -3765,7 +3908,7 @@
 
             
 
-            <code class="ruby">  get &#39;/instructors/:id&#39;, to: &#39;instructors#show&#39;</code>
+            <code class="ruby">  post &#39;/gyms&#39;, to: &#39;gyms#create&#39;</code>
           </li>
         </div>
       
@@ -3776,40 +3919,40 @@
 
             
 
-            <code class="ruby">  get &#39;/gyms/:id/instructors&#39;, to: &#39;gyms#teaching_staff&#39;</code>
+            <code class="ruby">  get &#39;/gyms&#39;, to: &#39;gyms#index&#39;</code>
           </li>
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="8">
-            
-            
-
+          <li class="covered" data-hits="1" data-linenumber="8">
+            <span class="hits">1</span>
             
 
-            <code class="ruby">  # get &#39;/gyms_forms/new&#39;, to:&#39;gyms_forms#new&#39;</code>
+            
+
+            <code class="ruby">  get &#39;/gyms/:id&#39;, to: &#39;gyms#show&#39;</code>
           </li>
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="9">
-            
-            
-
+          <li class="covered" data-hits="1" data-linenumber="9">
+            <span class="hits">1</span>
             
 
-            <code class="ruby">  # post &#39;/gyms_forms&#39;, to: &#39;gyms_forms#create&#39;</code>
+            
+
+            <code class="ruby">  get &#39;/instructors&#39;, to: &#39;instructors#index&#39;</code>
           </li>
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="10">
-            
-            
-
+          <li class="covered" data-hits="1" data-linenumber="10">
+            <span class="hits">1</span>
             
 
-            <code class="ruby"></code>
+            
+
+            <code class="ruby">  get &#39;/instructors/:id&#39;, to: &#39;instructors#show&#39;</code>
           </li>
         </div>
       
@@ -3820,18 +3963,18 @@
 
             
 
-            <code class="ruby">  get &#39;/gyms_forms/new&#39;, to:&#39;gyms#new&#39;</code>
+            <code class="ruby">  get &#39;/gyms/:id/instructors&#39;, to: &#39;gyms#teaching_staff&#39;</code>
           </li>
         </div>
       
         <div>
-          <li class="covered" data-hits="1" data-linenumber="12">
-            <span class="hits">1</span>
+          <li class="never" data-hits="" data-linenumber="12">
+            
             
 
             
 
-            <code class="ruby">  post &#39;/gyms&#39;, to: &#39;gyms#create&#39;</code>
+            <code class="ruby"></code>
           </li>
         </div>
       
@@ -3876,8 +4019,8 @@
     
 
     <div class="t-line-summary">
-      <b>18</b> relevant lines.
-      <span class="green"><b>18</b> lines covered</span> and
+      <b>26</b> relevant lines.
+      <span class="green"><b>26</b> lines covered</span> and
       <span class="red"><b>0</b> lines missed.</span>
     </div>
 
@@ -3944,8 +4087,8 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="2" data-linenumber="6">
-            <span class="hits">2</span>
+          <li class="covered" data-hits="4" data-linenumber="6">
+            <span class="hits">4</span>
             
 
             
@@ -3955,8 +4098,8 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="2" data-linenumber="7">
-            <span class="hits">2</span>
+          <li class="covered" data-hits="4" data-linenumber="7">
+            <span class="hits">4</span>
             
 
             
@@ -3966,8 +4109,8 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="2" data-linenumber="8">
-            <span class="hits">2</span>
+          <li class="covered" data-hits="4" data-linenumber="8">
+            <span class="hits">4</span>
             
 
             
@@ -3977,8 +4120,8 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="2" data-linenumber="9">
-            <span class="hits">2</span>
+          <li class="covered" data-hits="4" data-linenumber="9">
+            <span class="hits">4</span>
             
 
             
@@ -4219,24 +4362,24 @@
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="31">
-            
-            
-
+          <li class="covered" data-hits="1" data-linenumber="31">
+            <span class="hits">1</span>
             
 
-            <code class="ruby">#   it &#39;shows all instructors at a gym&#39; do</code>
+            
+
+            <code class="ruby">  it &#39;shows all instructors at a gym&#39; do</code>
           </li>
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="32">
-            
-            
-
+          <li class="covered" data-hits="1" data-linenumber="32">
+            <span class="hits">1</span>
             
 
-            <code class="ruby">#     visit &quot;/gyms/#{@gym1.id}/instructors&quot;</code>
+            
+
+            <code class="ruby">    visit &quot;/gyms/#{@gym1.id}/instructors&quot;</code>
           </li>
         </div>
       
@@ -4247,29 +4390,29 @@
 
             
 
-            <code class="ruby">#</code>
+            <code class="ruby"></code>
           </li>
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="34">
-            
-            
-
+          <li class="covered" data-hits="1" data-linenumber="34">
+            <span class="hits">1</span>
             
 
-            <code class="ruby">#     expect(page).to have_content(@staff1.name)</code>
+            
+
+            <code class="ruby">    expect(page).to have_content(@staff1.name)</code>
           </li>
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="35">
-            
-            
-
+          <li class="covered" data-hits="1" data-linenumber="35">
+            <span class="hits">1</span>
             
 
-            <code class="ruby">#     expect(page).to have_content(@staff2.name)</code>
+            
+
+            <code class="ruby">    expect(page).to have_content(@staff2.name)</code>
           </li>
         </div>
       
@@ -4280,7 +4423,7 @@
 
             
 
-            <code class="ruby">#   end</code>
+            <code class="ruby">  end</code>
           </li>
         </div>
       
@@ -4291,51 +4434,51 @@
 
             
 
-            <code class="ruby">#</code>
+            <code class="ruby"></code>
           </li>
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="38">
-            
-            
-
+          <li class="covered" data-hits="1" data-linenumber="38">
+            <span class="hits">1</span>
             
 
-            <code class="ruby">#   it &#39;links to all instructors of gym page&#39; do</code>
+            
+
+            <code class="ruby">  it &#39;links to all instructors of gym page&#39; do</code>
           </li>
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="39">
-            
-            
-
+          <li class="covered" data-hits="1" data-linenumber="39">
+            <span class="hits">1</span>
             
 
-            <code class="ruby">#     visit &quot;/gyms/#{@gym1.id}/instructors&quot;</code>
+            
+
+            <code class="ruby">    visit &quot;/gyms/#{@gym1.id}/instructors&quot;</code>
           </li>
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="40">
-            
-            
-
+          <li class="covered" data-hits="1" data-linenumber="40">
+            <span class="hits">1</span>
             
 
-            <code class="ruby">#     expect have_link(&quot;Meet the Instructors of #{@gym1.name}&quot;, :href =&gt; &quot;http://localhost:3000/gyms/&lt;%=@gym.id%&gt;/instructors&quot;)</code>
+            
+
+            <code class="ruby">    expect have_link(&quot;Meet the Instructors of #{@gym1.name}&quot;, :href =&gt; &quot;http://localhost:3000/gyms/&lt;%=@gym.id%&gt;/instructors&quot;)</code>
           </li>
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="41">
-            
-            
-
+          <li class="covered" data-hits="1" data-linenumber="41">
+            <span class="hits">1</span>
             
 
-            <code class="ruby">#     expect(current_path).to eq(&quot;/gyms/#{@gym1.id}/instructors&quot;)</code>
+            
+
+            <code class="ruby">    expect(current_path).to eq(&quot;/gyms/#{@gym1.id}/instructors&quot;)</code>
           </li>
         </div>
       
@@ -4346,7 +4489,7 @@
 
             
 
-            <code class="ruby">#   end</code>
+            <code class="ruby">  end</code>
           </li>
         </div>
       

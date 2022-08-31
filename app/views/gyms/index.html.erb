@@ -2,8 +2,7 @@
 <a href="http://localhost:3000/gyms" >View All Climbing Gyms</a>
 
 <h1>List of Climbing Gyms:</h1>
-<a href="http://localhost:3000/gyms_forms/new" >Add New Climbing Gym</a>
-
+<a href="http://localhost:3000/gyms/new" >Add New Climbing Gym</a>
 
 <ol>
   <ls>
@@ -11,7 +10,7 @@
       <h1>_______________________________________________________</h1>
 
       <h3><%= gym.name %></h3>
-      <h4><%= gym.created_at %></h4>
+      <h4>Created: <%= gym.created_at %></h4>
       <p>Hours: <%= gym.opening_time%> - <%=gym.closing_time %><p>
 
     <% end %>
